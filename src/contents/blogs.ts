@@ -1,0 +1,58 @@
+import { Blog } from "@/types/types";
+
+export const blogs: Blog[] = [
+  {
+    title: 'Getting Started with Next.js 14',
+    excerpt: 'Learn about the new features and improvements in Next.js 14.',
+    description: 'A detailed overview of what’s new in Next.js 14 and how to get started.',
+    date: '2024-03-15',
+    readTime: '5 min read',
+    slug: 'getting-started-with-nextjs-14',
+    content: 'Full content for Getting Started with Next.js 14 goes here...',
+  },
+  {
+    title: 'Mastering TypeScript for React',
+    excerpt: 'A comprehensive guide to using TypeScript with React applications.',
+    description: 'Deep dive into TypeScript best practices for React developers.',
+    date: '2024-03-10',
+    readTime: '8 min read',
+    slug: 'mastering-typescript-for-react',
+    content: 'Full content for Mastering TypeScript for React goes here...',
+  },
+  {
+    title: 'Building Responsive Layouts with Tailwind CSS',
+    excerpt: 'Tips and tricks for creating responsive designs using Tailwind CSS.',
+    description: 'Learn how to leverage Tailwind CSS for responsive web design.',
+    date: '2024-03-05',
+    readTime: '6 min read',
+    slug: 'building-responsive-layouts-with-tailwind-css',
+    content: 'Full content for Building Responsive Layouts with Tailwind CSS goes here...',
+  },
+  {
+    title: 'Understanding React Hooks',
+    excerpt: 'A deep dive into React Hooks and how to use them effectively.',
+    description: 'Everything you need to know about React Hooks.',
+    date: '2024-03-01',
+    readTime: '7 min read',
+    slug: 'understanding-react-hooks',
+    content: 'Full content for Understanding React Hooks goes here...',
+  },
+  {
+    title: 'Deploying Next.js Applications on Vercel',
+    excerpt: 'Step-by-step guide to deploying your Next.js applications on Vercel.',
+    description: 'How to deploy and optimize Next.js apps on Vercel.',
+    date: '2024-02-25',
+    readTime: '4 min read',
+    slug: 'deploying-nextjs-applications-on-vercel',
+    content: 'Full content for Deploying Next.js Applications on Vercel goes here...',
+  },
+  {
+    title: 'Building a RESTful API with Node.js and Express',
+    excerpt: 'Learn how to create a RESTful API using Node.js and Express.',
+    description: 'A beginner-friendly guide to building RESTful APIs.',
+    date: '2024-02-20',
+    readTime: '10 min read',
+    slug: 'building-a-restful-api-with-nodejs-and-express',
+    content: 'Full content for Building a RESTful API with Node.js and Express goes here...',
+  },
+];
