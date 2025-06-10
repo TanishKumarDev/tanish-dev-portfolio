@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    name: 'MERN E-Commerce',
+    description: 'A full-stack online store with user auth and payments.',
+    problem: 'Solves secure shopping and inventory management.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+    live: 'https://example.com',
+    repo: 'https://github.com/tanish/mern-ecommerce',
+    screenshot: '/src/assets/project-screenshots/mern-ecommerce.png',
+  },
+  {
+    name: 'To-Do App',
+    description: 'Task manager with CRUD functionality.',
+    problem: 'Organizes daily tasks efficiently.',
+    tech: ['React', 'Node.js', 'MongoDB'],
+    live: 'https://example.com',
+    repo: 'https://github.com/tanish/todo-app',
+    screenshot: '/src/assets/project-screenshots/todo-app.png',
+  },
+  {
+    name: 'Portfolio Site',
+    description: 'This personal portfolio to showcase my work.',
+    problem: 'Presents skills and projects professionally.',
+    tech: ['React', 'Vite', 'Tailwind'],
+    live: 'https://tanish-portfolio.com',
+    repo: 'https://github.com/tanish/portfolio',
+    screenshot: '/src/assets/project-screenshots/portfolio.png',
+  },
+  {
+    name: 'DSA Visualizer',
+    description: 'Interactive tool to visualize algorithms.',
+    problem: 'Helps students learn DSA concepts visually.',
+    tech: ['React', 'C++', 'JavaScript'],
+    live: 'https://example.com',
+    repo: 'https://github.com/tanish/dsa-visualizer',
+    screenshot: '/src/assets/project-screenshots/dsa-visualizer.png',
+  },
+];

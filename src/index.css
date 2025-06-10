@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Modern smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0A192F;
+  color: #E6F1FF;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: #64FFDA;
+  color: #0A192F;
+}
+
+/* Custom styles if needed */
+body {
+  font-family: 'Inter', sans-serif;
+}
