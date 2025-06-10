@@ -103,34 +103,44 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden text-text-primary p-2 z-50"
+            className="flex md:hidden text-text-primary p-2 z-50"
             onClick={() => setIsOpen(!isOpen)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             <motion.div
-              className="w-6 h-6 relative"
+              className="w-6 h-6 relative flex flex-col justify-center items-center bg-amber-100"
               animate={isOpen ? "open" : "closed"}
             >
               <motion.span
                 className="absolute w-full h-0.5 bg-text-primary rounded-full"
-                style={{ top: "50%", transform: "translateY(-50%)" }}
                 animate={{
                   rotate: isOpen ? 45 : 0,
-                  translateY: isOpen ? 0 : -8
+                  y: isOpen ? 0 : -6,
+                }}
+                style={{
+                  top: isOpen ? "50%" : "33%",
+                  transition: "all 0.3s"
                 }}
               />
               <motion.span
                 className="absolute w-full h-0.5 bg-text-primary rounded-full"
-                style={{ top: "50%", transform: "translateY(-50%)" }}
                 animate={{ opacity: isOpen ? 0 : 1 }}
+                style={{
+                  top: "50%",
+                  transition: "all 0.3s"
+                }}
               />
               <motion.span
                 className="absolute w-full h-0.5 bg-text-primary rounded-full"
-                style={{ top: "50%", transform: "translateY(-50%)" }}
                 animate={{
                   rotate: isOpen ? -45 : 0,
-                  translateY: isOpen ? 0 : 8
+                  y: isOpen ? 0 : 6,
+                }}
+                style={{
+                  top: isOpen ? "50%" : "66%",
+                  transition: "all 0.3s"
                 }}
               />
             </motion.div>
@@ -141,11 +151,12 @@ function Navbar() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="fixed inset-0 bg-dark-100/95 backdrop-blur-md md:hidden"
+              className="fixed inset-0 bg-dark-100/95 backdrop-blur-md md:hidden flex flex-col"
               initial="closed"
               animate="open"
               exit="closed"
               variants={menuVariants}
+              style={{ zIndex: 40 }}
             >
               <div className="flex flex-col items-center justify-center h-full space-y-8">
                 {navLinks.map((link, i) => (
